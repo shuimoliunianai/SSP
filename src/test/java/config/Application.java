@@ -6,10 +6,15 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 /**
  * Created by apple on 16/9/21.
  */
-public class Application {
-    @Configuration
-    public class SspApplicationConfig extends WebMvcConfigurerAdapter {
-        public SspApplicationConfig() {
-        }
+@Configuration
+@ComponentScan({"org.gameloft.ssp"})
+@Import({redisConfig.class})
+@ImportResource({"classpath:spring.xml"})
+public class SspApplicationTestConfig extends WebMvcConfigurerAdapter {
+    public SspApplicationTestConfig() {
+    }
+
+    public void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor(new RequestProcessingTimeInterceptor());
     }
 }
