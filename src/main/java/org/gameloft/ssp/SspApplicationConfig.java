@@ -13,7 +13,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
 @Configuration
 @ComponentScan({"org.gameloft.ssp"})
-@EnableWebMvc
+//@EnableWebMvc
 @ImportResource({"classpath:spring.xml"})
 public class SspApplicationConfig extends WebMvcConfigurerAdapter {
     public SspApplicationConfig() {

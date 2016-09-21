@@ -1,4 +1,8 @@
-package config.reids;
+package config.redis;
+
+/**
+ * Created by apple on 16/9/21.
+ */
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
