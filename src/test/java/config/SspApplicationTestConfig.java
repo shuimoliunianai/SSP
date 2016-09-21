@@ -19,4 +19,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 public class SspApplicationTestConfig extends WebMvcConfigurerAdapter {
     public SspApplicationTestConfig() {
     }
+    public void addInterceptors(InterceptorRegistry registry) {
+//        registry.addInterceptor(new RequestProcessingTimeInterceptor());
+    }
 }
