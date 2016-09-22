@@ -16,10 +16,10 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 @ComponentScan({"org.gameloft.ssp"})
 @Import({redisConfig.class})
 @ImportResource({"classpath:spring.xml"})
-public class SspApplicationTestConfig extends WebMvcConfigurerAdapter {
+public class SspApplicationTestConfig {
     public SspApplicationTestConfig() {
     }
-    public void addInterceptors(InterceptorRegistry registry) {
-//        registry.addInterceptor(new RequestProcessingTimeInterceptor());
-    }
+//    public void addInterceptors(InterceptorRegistry registry) {
+////        registry.addInterceptor(new RequestProcessingTimeInterceptor());
+//    }
 }
